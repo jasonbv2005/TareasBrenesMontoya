@@ -17,7 +17,7 @@ def count_char(cadena, caracter):
       cantidad es el número de veces que caracter aparece en cadena.
     """
 
-    #Verificar que 'cadena' sea un string.
+    # Verificar que 'cadena' sea un string.
     if not isinstance(cadena, str):
         return -100, None
 
@@ -35,7 +35,7 @@ def count_char(cadena, caracter):
     return 0, cantidad
 
 
-def multiplo_2(base,multiplo):
+def multiplo_2(base, multiplo):
     """
     Funcionamiento: Calcula multiplo * base, con multiplo en (1, 2, 4, 8, 16).
     Entradas:
@@ -51,7 +51,7 @@ def multiplo_2(base,multiplo):
 
     # Verificar que multiplo y base sean enteros.
     if not (isinstance(base, int) and isinstance(multiplo, int)):
-        return(-400, None)
+        return (-400, None)
 
     # Verificar que multiplo y base sean positivos.
     if not (base > 0 and multiplo > 0):
